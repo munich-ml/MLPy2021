@@ -1,0 +1,40 @@
+MLPy2020 logfile challenge
+
+header
+measurement date,2020-05-06
+measurement time,08:00:00
+calibration factor sig0,0.55
+calibration factor sig2,1.88
+
+measurements
+x,sig0,sig1,sig2
+5.17,6.40 Ohms,16.05 Ohms,10.61 Ohms
+9.47,34.21 Ohms,5.95 Ohms,293 mOhms
+7.65,21.11 Ohms,366 mOhms,4.80 Ohms
+2.82,36.06 Ohms,16.03 Ohms,6.39 Ohms
+2.21,30.50 Ohms,11.65 Ohms,4.36 Ohms
+6.86,6.92 Ohms,3.73 Ohms,7.39 Ohms
+1.67,21.43 Ohms,7.45 Ohms,2.67 Ohms
+3.92,28.49 Ohms,19.98 Ohms,9.47 Ohms
+6.18,324 mOhms,8.59 Ohms,9.24 Ohms
+4.12,25.24 Ohms,19.96 Ohms,9.84 Ohms
+0.02,6 mOhms,2 mOhms,1 mOhms
+8.84,36.11 Ohms,2.10 Ohms,1.35 Ohms
+8.85,36.14 Ohms,2.14 Ohms,1.33 Ohms
+3.00,36.36 Ohms,17.09 Ohms,6.98 Ohms
+5.90,108 mOhms,10.82 Ohms,9.82 Ohms
+9.78,30.57 Ohms,8.31 Ohms,49 mOhms
+8.45,33.44 Ohms,621 mOhms,2.33 Ohms
+0.65,4.06 Ohms,1.28 Ohms,438 mOhms
+2.95,36.34 Ohms,16.77 Ohms,6.79 Ohms
+2.88,36.22 Ohms,16.37 Ohms,6.57 Ohms
+8.22,30.69 Ohms,155 mOhms,2.98 Ohms
+6.26,679 mOhms,7.96 Ohms,9.05 Ohms
+1.10,10.87 Ohms,3.53 Ohms,1.23 Ohms
+0.01,0 mOhms,0 mOhms,0 mOhms
+9.42,34.62 Ohms,5.61 Ohms,347 mOhms
+1.42,16.57 Ohms,5.57 Ohms,1.97 Ohms
+4.22,23.51 Ohms,19.86 Ohms,10.01 Ohms
+3.46,34.25 Ohms,19.13 Ohms,8.35 Ohms
+8.70,35.46 Ohms,1.46 Ohms,1.68 Ohms
+4.29,22.22 Ohms,19.75 Ohms,10.11 Ohms
