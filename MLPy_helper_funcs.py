@@ -131,14 +131,14 @@ def create_csv(plot=False):
     # Create header
     cal_factors = [0.55, 1, 1.88]
     
-    header = {"measurement date": dt.date(2020, 5, 6),
+    header = {"measurement date": dt.date(2021, 4, 6),
               "measurement time": dt.time(8, 0, 0)}
     
     for i, cal_factor in enumerate(cal_factors):
         if cal_factor != 1:
             header["calibration factor sig{}".format(i)] = cal_factor
     
-    s = "MLPy2020 logfile challenge"
+    s = "MLPy logfile challenge"
     
     s += "\n\nheader"
     for key, value in header.items():
