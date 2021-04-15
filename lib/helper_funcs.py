@@ -48,7 +48,8 @@ def pickle_out(filename, scope, *variables):
         filename : str
     
         scope : dict
-            usually locals(), globals() works, too
+            usually locals()
+            globals() works, too
             
         *variables : all types that can be pickled
             the variables to be pickled
@@ -70,6 +71,17 @@ def pickle_out(filename, scope, *variables):
         
         
 def parse_logfile_string(s):
+    """
+    Parses a logfile string according to 10_Logfile_challenge.ipynb
+
+    Parameters:
+        s : str
+            logfile string
+
+    Returns:
+        dictionary : dict
+            containing "params", "names", "data"
+    """
     # split the input string on "\n" new line
     lines = s.split("\n")
 
