@@ -71,7 +71,7 @@ versus
 
 # Epic 2: Machine Learning with Scikit-learn
 
-## [21_first_machine_lerning_models.ipynb](https://colab.research.google.com/github/munich-ml/MLPy2020/blob/master/21_first_machine_lerning_models.ipynb)
+## [21_first_machine_lerning_models.ipynb](https://github.com/munich-ml/MLPy2021/blob/92502102b3dddd20e48fd0550d22eaa1e9a63bb4/21_first_machine_lerning_models.ipynb)
 - **Scikit-learn** offers standard interfaces to its models, e.g. `model.fit(x_train, y_train)`, `model.predict(x_new)`
 - **RSME** or *root mean squared error* used as performance criterion for the **regression problem**
 - a model is supposed to **generalize** the training data, not to **memorize** it
@@ -81,7 +81,7 @@ versus
 - an **underfitting** model performs bad on both data sets
 - comparison of **Linear regression model** and **Decision tree model**
 
-## [22_end2end_ml_project.ipynb](https://colab.research.google.com/github/munich-ml/MLPy2020/blob/master/22_end2end_ml_project.ipynb)
+## [22_end2end_ml_project.ipynb](https://github.com/munich-ml/MLPy2021/blob/8942d1a0440c5b1c7d70eed5bf56f82839ab2d5f/22_end2end_ml_project.ipynb)
 - `housing` dataset with 10 **attributes** and 20.640 samples
 - `median_house_value` will be the *target attribute*, also called **label**. The other attributes will be the **features**
 - the `median_house_value` distribution is odd, with an obvious cap at 500,000
@@ -104,14 +104,14 @@ versus
 - concluding [SciKit-learn](https://scikit-learn.org/stable/tutorial/machine_learning_map/index.html)
 
 # Epic 3: Neural Networks for Computer Vision with Tensorflow
-## Neural networks [MLPy2020_slides.pdf p7..10](https://github.com/munich-ml/MLPy2020/blob/master/MLPy2020_slides.pdf)
+## Neural networks [MLPy2021_slides.pptx p6..8](https://github.com/munich-ml/MLPy2021/blob/master/MLPy2021_slides.pptx)
 - **layers** (input, hidden and output), weights and biases
 - neural net training means **finding weights & biases that minimize the cost function**
 - (error) **back propagation** modifies the weights accrding to their effect on the error
 - **epoch** is the training over the full dataset, executed in batches
 - get an intuition for NN's with [TensorFlow playground](https://playground.tensorflow.org)
 
-## [31_fMNIST_classifier_keras.ipynb](https://colab.research.google.com/github/munich-ml/MLPy2020/blob/master/31_fMNIST_classifier_keras.ipynb)
+## [31_fMNIST_classifier_keras.ipynb](https://github.com/munich-ml/MLPy2021/blob/8942d1a0440c5b1c7d70eed5bf56f82839ab2d5f/31_fMNIST_classifier_keras.ipynb)
 - `fashion_MNIST` classification problem: 60,000 images 28x28 pixels from 10 classes
 - images as NumPy arrays. Plotting with `plt.imshow(X_train[img])`
 - **build the model** with `keras.models.Sequential()`
@@ -119,25 +119,25 @@ versus
 - **train the model** and don't forget to chose **GPU** as hardware accelerator in Runtime 
 - mount Google Drive and save the model (`model.save()`) and the data (`picke_out()`)
 
-## [32_evaluate_fMNIST_classifier.ipynb](https://colab.research.google.com/github/munich-ml/MLPy2020/blob/master/32_evaluate_fMNIST_classifier.ipynb)
+## [32_evaluate_fMNIST_classifier.ipynb](https://github.com/munich-ml/MLPy2021/blob/8942d1a0440c5b1c7d70eed5bf56f82839ab2d5f/32_evaluate_fMNIST_classifier.ipynb)
 - load the model from Google Drive `keras.models.load_model()`
 - predict instances from the *validation data set*
 - **confusion matrix** `tf.math.confusion_matrix`, and how to plot it
 - performance measures for *classifiers*, *accuracy*, *precision, recall*, *F1-score*
 - discussion of prediction examples, in particular `false_pos`'s and `false_neg`'s
 
-## Convolutional neural networks [MLPy2020_slides.pdf p11..13](https://github.com/munich-ml/MLPy2020/blob/master/MLPy2020_slides.pdf)
+## Convolutional neural networks [MLPy2021_slides.pptx p9..11](https://github.com/munich-ml/MLPy2021/blob/master/MLPy2021_slides.pptx)
 - disadvantages of **dense neural networks** for **computer vision** (scaleability, prone to overfitting, semantic neighborhood, position dependence)
 - CNN layer types (convolutional layers, pooling layers, dense layers)
 - lower layers learn basic shapes, while higher layers learn more complete objects (**hint to transfer learning**)
 - get some intuition for CNN's with [Adam Harleys's "Interactive CNN Visualizer"](https://www.cs.ryerson.ca/~aharley/vis/conv/)
 
-## [34_fMNIST_with_CNNs.ipynb](https://colab.research.google.com/github/munich-ml/MLPy2020/blob/master/34_fMNIST_with_CNNs.ipynb)
+## [34_fMNIST_with_CNNs.ipynb](https://github.com/munich-ml/MLPy2021/blob/bcbe43d639a6214aff6aad5c096f77b9be79b7f3/34_fMNIST_with_CNNs.ipynb)
 This notebook is very similar to `31_fMNIST_classifier_keras.ipynp`, except for:
 - slightly different preprocessing (scaling to std. diviation and 4dim image arrays)
 - build the model with CNN layers (e.g. `keras.layers.Conv2D` and `keras.layers.MaxPooling2D`)
 
-## [35_batch_evaluate_fMNIST.ipynb](https://colab.research.google.com/github/munich-ml/MLPy2020/blob/master/35_batch_evaluate_fMNIST.ipynb)
+## [35_batch_evaluate_fMNIST.ipynb](https://github.com/munich-ml/MLPy2021/blob/488f41f731e71f33a722c296e096768a1851b912/35_batch_evaluate_fMNIST.ipynb)
 - mount Google Drive and search all models in `models` subdir
 - benchmark all models w.r.t. **accuracy** and **execution time**
 - **concluding CNNs** (e.g. for MNIST the CNNs don't benefit from their position independency)
@@ -147,8 +147,8 @@ This notebook is very similar to `31_fMNIST_classifier_keras.ipynp`, except for:
 ## Progmming language popularity
 - [TOIBE popularity index](https://www.tiobe.com/tiobe-index/) ratings based on search quantities of 25 engines (Google, Baidu,.. but also Wikipedia)
 > 1. C
-> 2. Java
-> 3. **Python** 
+> 2. **Python** 
+> 3. Java
 
 - [PYPL](http://pypl.github.io/) measures how often language tutorials are googled by exploring Google Trends.
 > 1. **Python** 
