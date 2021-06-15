@@ -1,15 +1,15 @@
 # Machine Learning with Python
-The [MLPy2020 repo](https://github.com/munich-ml/MLPy2020) contains the Jupyter notebooks, datasets and models for the **2020 "Machine Learning with Python" class** at [DHBW Friedrichshafen](https://www.ravensburg.dhbw.de/studienangebot/bachelor-studiengaenge/elektrotechnik-fahrzeugelektronik.html).
+The [MLPy2021 repo](https://github.com/munich-ml/MLPy2021) contains the Jupyter notebooks, datasets and models for the **2021 "Machine Learning with Python" class** at [DHBW Friedrichshafen](https://www.ravensburg.dhbw.de/studienangebot/bachelor-studiengaenge/elektrotechnik-fahrzeugelektronik.html).
 
-## Wellcome to Python and Colab [MLPy2020_slides.pdf p2](https://github.com/munich-ml/MLPy2020/blob/master/MLPy2020_slides.pdf)
+## Welcome to Python and Colab [MLPy2021_slides.pptx p2](https://github.com/munich-ml/MLPy2021/blob/master/MLPy2021_slides.pptx)
 - running **Python** locally or in the cloud ([**Google Colab**](https://colab.research.google.com/) for this course) 
 - Python [`scripts.py`](https://www.python.org/) vs. [`jupyter_notebooks.ipynb`](https://jupyter.org/)
 
 # Epic 1: Python basics
-Parsing logfiles is a regular task for most data scientists. **Epic 1** tackles such parsing-task, the **logfile challange**. It starts with Python's basic datatypes (`str`, `list`, `dict`,..) and contineously improves the parser with by using higher level libraries (**NumPy**, **Matplotlib**, **Pandas**) and finally **classes**.  
+Parsing logfiles is a regular task for most data scientists. **Epic 1** tackles such parsing-task, the **logfile challange**. It starts with Python's basic datatypes (`str`, `list`, `dict`,..) and contineously improves the parser by using higher level libraries (**NumPy**, **Matplotlib**, **Pandas**) and finally **classes**.  
 
-## [12_Logfile_challenge.ipynb](https://colab.research.google.com/github/munich-ml/MLPy2020/blob/master/12_Logfile_challenge.ipynb)
-- `!git clone https://github.com/munich-ml/MLPy2020/` for getting `logfile.csv`
+## [10_Logfile_challenge.ipynb](https://github.com/munich-ml/MLPy2021/blob/0a5b6f12142b7f6822e46c3dfcfb4de30ab20fe1/10_Logfile_challenge.ipynb)
+- `!git clone https://github.com/munich-ml/MLPy2021/` for getting `logfile.csv`
 - task: Parsing the logfile from `s`, `<type 'str'>`  
 - `lines = s.split("\n")`
 - `<type 'list'>` is iterable: `for line in lines:`
@@ -17,7 +17,7 @@ Parsing logfiles is a regular task for most data scientists. **Epic 1** tackles 
 - `<type 'set'>` for set operations like `union` or `diff`
 - 2-dim `data` became a list of lists: `data[row][col]`, that doesn't support matrix operations like element-wise multiplication or arbitrary indexing.
 
-## [15_NumPy.ipynb](https://colab.research.google.com/github/munich-ml/MLPy2020/blob/master/15_NumPy.ipynb)
+## [11_NumPy.ipynb](https://github.com/munich-ml/MLPy2021/blob/0a5b6f12142b7f6822e46c3dfcfb4de30ab20fe1/11_NumPy.ipynb)
 **NumPy** (alias `np`) is a Python module made for matrix math.
 
 The **`numpy.array`** is NumPy's standard datatype.
@@ -29,21 +29,30 @@ The **`numpy.array`** is NumPy's standard datatype.
 NumPy provides various *concatanation methods*
 - `np.column_stack()` supports horizontal stacking of 2D and 1D arrays
 
-## [16_Matplotlib.ipynb](https://colab.research.google.com/github/munich-ml/MLPy2020/blob/master/16_Matplotlib.ipynb)
+## [12_Logfiles_w_NumPy.ipynb](https://github.com/munich-ml/MLPy2021/blob/0a5b6f12142b7f6822e46c3dfcfb4de30ab20fe1/12_Logfiles_w_NumPy.ipynb)
+Logfile challenge reworked to use NumPy arrays
+
+## [13_Matplotlib.ipynb](https://github.com/munich-ml/MLPy2021/blob/0a5b6f12142b7f6822e46c3dfcfb4de30ab20fe1/13_Matplotlib.ipynb)
 For inspiration what and how to plot go to [Matplotlib website](https://matplotlib.org/)
 
 The `%matplotlib` magic switches between:
 - static inline plots (default) with `%matplotlib inline`
 - interactive plots with `%matplotlib qt`
 
-## [17_Pandas.ipynb](https://colab.research.google.com/github/munich-ml/MLPy2020/blob/master/17_Pandas.ipynb) 
+## [14_Pandas.ipynb](https://github.com/munich-ml/MLPy2021/blob/0a5b6f12142b7f6822e46c3dfcfb4de30ab20fe1/14_Pandas.ipynb) 
 **Pandas** (alias `pd`) is a Python module providing fast, flexible, and expressive data structures which are designed to make working with "labeled" data both easy and intuitive. 
 
 **`pd.DataFrame`** is a two-dimensional data structure with labeled axes, rows (`index`) and `column`. The data is often a `np.array`.
 
 **`pd.Series`** is the one-dimensional version of the `pd.DataFrame`.
 
-## [18_Logfiles_w_classes.ipynb](https://colab.research.google.com/github/munich-ml/MLPy2020/blob/master/18_Logfiles_w_classes.ipynb) 
+## [15_Logfiles_w_Pandas.ipynb](https://github.com/munich-ml/MLPy2021/blob/0a5b6f12142b7f6822e46c3dfcfb4de30ab20fe1/15_Logfiles_w_Pandas.ipynb)
+Logfile challenge reworked to use Pandas DataFrames
+
+## [17_object_oriented_programming.ipynb](https://github.com/munich-ml/MLPy2021/blob/0a5b6f12142b7f6822e46c3dfcfb4de30ab20fe1/17_object_oriented_programming.ipynb)
+Skipped in MLPy2021 class
+
+## [18_Logfiles_w_classes.ipynb](https://github.com/munich-ml/MLPy2021/blob/0a5b6f12142b7f6822e46c3dfcfb4de30ab20fe1/18_Logfiles_w_classes.ipynb) 
 
 The object oriented implementation of the *logfile challenge* brings some advantages:
 
